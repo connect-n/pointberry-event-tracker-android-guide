@@ -1,6 +1,6 @@
 # PointBerry Event Tracker
 
-### 1. TPMN으로부터 inventory ID를 발급 받으세요.
+### 1. TPMN으로부터 tracker inventory ID를 발급 받으세요.
 
 ### 2. pointberry-event-tracker-v1.0.0.aar을 다운로드 하여 프로젝트에 추가하세요.
 
@@ -16,7 +16,7 @@ PointBerryImpressionTracker = pbImpTracker = new PointBerryImpressionTracker(get
 public void onBannerLoaded(MoPubView banner) {
     // The banner has successfully retrieved an ad.
     
-    pbImpTracker.logImpression(YOUR_BANNER_INVENTORY_ID_HERE); // 발급 받은 배너 invertory ID를 넣으세요.
+    pbImpTracker.logImpression(YOUR_BANNER_TRACKER_INVENTORY_ID_HERE); // 발급 받은 배너 tracker invertory ID를 넣으세요.
 }
 ~~~
 #### `MoPubInterstitial.InterstitialAdListener`
@@ -25,6 +25,6 @@ public void onBannerLoaded(MoPubView banner) {
 public void onInterstitialShown(MoPubInterstitial interstitial) {
    // The interstitial has been shown.
    
-   pbImpTracker.logImpression(YOUR_INTERSTITIAL_INVENTORY_ID_HERE); // 발급 받은 인터스티셜 invertory ID를 넣으세요.
+   pbImpTracker.logImpression(YOUR_INTERSTITIAL_TRACKER_INVENTORY_ID_HERE); // 발급 받은 인터스티셜 tracker invertory ID를 넣으세요.
 }
 ~~~
