@@ -9,7 +9,7 @@
 PointBerryImpressionTracker = pbImpTracker = new PointBerryImpressionTracker(getApplicationContext());
 ~~~
 
-### 4. 광고 리스너의 impression 콜백에서 `logImpression()`을 호출하세요. 다음은 MoPub의 예시입니다.
+### 4. MoPub 리스너의 impression 콜백에서 `logImpression()`을 호출하세요.
 #### `MoPubView.BannerAdListener`
 ~~~java
 @Override
