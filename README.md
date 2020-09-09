@@ -1,4 +1,4 @@
-# TPMN-퍼블리셔 Tracker 통합 프로세스
+# PointBerry Event Tracker
 
 ### 1. TPMN으로부터 inventory ID를 발급 받으세요.
 
