@@ -35,6 +35,8 @@ public void onInterstitialShown(MoPubInterstitial interstitial) {
 ~~~java
 @Override
 public void onRewardedVideoCompleted(@NonNull Set<String> adUnitIds, @NonNull MoPubReward reward) {
+    // The rewarded video is completed and the user should be rewarded.
+
     if (reward.isSuccessful()) {
         pbImpTracker.logImpression(YOUR_REWARDED_VIDEO_TRACKER_INVENTORY_ID_HERE); // 발급 받은 리워드 비디오 tracker invertory ID를 넣으세요.
     }
