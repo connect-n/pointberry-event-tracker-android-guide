@@ -9,7 +9,7 @@
 PointBerryImpressionTracker = pbImpTracker = new PointBerryImpressionTracker(getApplicationContext());
 ~~~
 
-### 4. MoPub 리스너의 impression 콜백에서 `logImpression()`을 호출하세요.
+### 4. 광고 리스너의 impression 관련 콜백에서 `logImpression()`을 호출하세요. 다음은 MoPub의 예시입니다.
 
 #### `MoPubView.BannerAdListener`
 ~~~java
@@ -17,7 +17,7 @@ PointBerryImpressionTracker = pbImpTracker = new PointBerryImpressionTracker(get
 public void onBannerLoaded(MoPubView banner) {
     // The banner has successfully retrieved an ad.
     
-    pbImpTracker.logImpression(YOUR_BANNER_TRACKER_INVENTORY_ID_HERE); // 발급 받은 배너 tracker invertory ID를 넣으세요.
+    pbImpTracker.logImpression(YOUR_BANNER_TRACKER_INVENTORY_ID_HERE); // FIXME: 발급 받은 배너 tracker invertory ID를 넣으세요.
 }
 ~~~
 
@@ -27,7 +27,7 @@ public void onBannerLoaded(MoPubView banner) {
 public void onInterstitialShown(MoPubInterstitial interstitial) {
    // The interstitial has been shown.
    
-   pbImpTracker.logImpression(YOUR_INTERSTITIAL_TRACKER_INVENTORY_ID_HERE); // 발급 받은 인터스티셜 tracker invertory ID를 넣으세요.
+   pbImpTracker.logImpression(YOUR_INTERSTITIAL_TRACKER_INVENTORY_ID_HERE); // FIXME: 발급 받은 인터스티셜 tracker invertory ID를 넣으세요.
 }
 ~~~
 
@@ -38,7 +38,7 @@ public void onRewardedVideoCompleted(@NonNull Set<String> adUnitIds, @NonNull Mo
     // The rewarded video is completed and the user should be rewarded.
 
     if (reward.isSuccessful()) {
-        pbImpTracker.logImpression(YOUR_REWARDED_VIDEO_TRACKER_INVENTORY_ID_HERE); // 발급 받은 리워드 비디오 tracker invertory ID를 넣으세요.
+        pbImpTracker.logImpression(YOUR_REWARDED_VIDEO_TRACKER_INVENTORY_ID_HERE); // FIXME: 발급 받은 리워드 비디오 tracker invertory ID를 넣으세요.
     }
 }
 ~~~
