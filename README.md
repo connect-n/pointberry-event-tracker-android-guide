@@ -6,7 +6,7 @@
 
 ### 3. `PointBerryImpressionTracker` 객체를 다음과 같이 선언하세요.
 ~~~java
-PointBerryImpressionTracker = pbImpTracker = new PointBerryImpressionTracker(getApplicationContext());
+PointBerryImpressionTracker pbImpTracker = new PointBerryImpressionTracker(getApplicationContext());
 ~~~
 
 ### 4. 광고 리스너의 impression 관련 콜백에서 `logImpression()`을 호출하세요. 다음은 MoPub의 예시입니다.
