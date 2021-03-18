@@ -1,8 +1,13 @@
 # PointBerry Event Tracker
 
-### 1. TPMN으로부터 tracker inventory ID를 발급 받으세요.
+### 1. 포인트베리 담당자로부터 tracker inventory ID를 발급 받으세요.
 
-### 2. pointberry-event-tracker-v1.0.0.aar을 다운로드 하여 프로젝트에 추가하세요.
+### 2. build.gradle에 다음을 추가하세요.
+~~~groovy
+dependencies {
+    implementation 'io.pointberry:pointberry-event-tracker:1.0.1'
+}
+~~~
 
 ### 3. `PointBerryImpressionTracker` 객체를 다음과 같이 선언하세요.
 ~~~java
