@@ -5,7 +5,7 @@
 ### 2. build.gradle에 다음을 추가하세요.
 ~~~groovy
 dependencies {
-    implementation 'io.pointberry:pointberry-event-tracker:1.0.1'
+    implementation 'com.github.connect-n:pointberry-event-tracker-android:1.0.3'
 }
 ~~~
 
